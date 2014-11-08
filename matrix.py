@@ -53,7 +53,7 @@ class Matrix:
     def delete_row(self, n):
         if len(self.rows)-1 < n:
             raise Exception("Nie ma takiego indeksu wiersza")
-        self.rows.remove(self.rows[n])
+        self.rows.pop(n)
 
     @size_check
     def delete_column(self, n):
